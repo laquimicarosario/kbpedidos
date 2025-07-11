@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Aromas y Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nuestro Catálogo de Aromas</h1>
+        <p>Selecciona la cantidad deseada de cada aroma y confirma tu pedido.</p>
+
+        <form id="orderForm">
+            <div class="aroma-item">
+                <label for="rosa">Rosa Delicada:</label>
+                <input type="number" id="rosa" name="Rosa Delicada" min="0" value="0">
+            </div>
+            <div class="aroma-item">
+                <label for="jazmin">Jazmín Nocturno:</label>
+                <input type="number" id="jazmin" name="Jazmín Nocturno" min="0" value="0">
+            </div>
+            <div class="aroma-item">
+                <label for="lavanda">Lavanda Fresca:</label>
+                <input type="number" id="lavanda" name="Lavanda Fresca" min="0" value="0">
+            </div>
+            <div class="contact-info">
+                <h2>Tus Datos de Contacto</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu Nombre" required>
+
+                <label for="telefono">Teléfono (WhatsApp):</label>
+                <input type="tel" id="telefono" placeholder="+54 9 11 1234 5678" required>
+
+                <label for="direccion">Dirección (Opcional):</label>
+                <input type="text" id="direccion" placeholder="Calle, número, piso, dpto.">
+            </div>
+
+            <button type="submit" id="confirmOrder">Confirmar Pedido</button>
+        </form>
+
+        <div id="orderSummary" class="hidden">
+            <h2>Resumen de Tu Pedido</h2>
+            <pre id="summaryText"></pre>
+            <button id="sendEmailBtn">Enviar por Correo</button>
+            <button id="sendWhatsappBtn">Enviar por WhatsApp</button>
+            <button id="copyTextBtn">Copiar Pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
