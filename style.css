@@ -1,56 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif; /* Usando Inter como fuente */
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Alinea al inicio para que el contenido no se centre verticalmente si es muy largo */
     min-height: 100vh;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
 }
 
 .container {
     background-color: #fff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    max-width: 600px;
+    border-radius: 12px; /* Más redondeado */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+    max-width: 700px; /* Ancho máximo un poco más grande */
     width: 100%;
+    box-sizing: border-box;
 }
 
-h1, h2 {
+h1 {
     color: #5a2d82;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 2.5em; /* Tamaño de fuente más grande */
 }
 
-p {
+.subtitle {
     text-align: center;
     margin-bottom: 30px;
+    color: #666;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #8a5ba3;
+    border-bottom: 2px solid #e0e0e0; /* Borde más visible */
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.aroma-section {
+    margin-bottom: 30px;
+}
+
+.aroma-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre items */
 }
 
 .aroma-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 10px;
+    flex-direction: column; /* Apila label y input */
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #f9f9f9;
     border: 1px solid #eee;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .aroma-item label {
-    flex-basis: 70%;
     font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 1.05em;
 }
 
 .aroma-item input[type="number"] {
-    flex-basis: 25%;
-    padding: 8px;
+    width: calc(100% - 20px); /* Ajusta el ancho */
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     text-align: center;
+    font-size: 1.1em;
     -moz-appearance: textfield; /* Para Firefox */
 }
 
@@ -61,47 +89,59 @@ p {
 }
 
 .contact-info {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px dashed #ccc;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 2px dashed #e0e0e0;
 }
 
 .contact-info label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
+    color: #444;
 }
 
 .contact-info input[type="text"],
 .contact-info input[type="tel"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
+    width: calc(100% - 22px); /* Ajusta el ancho para padding */
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 1.1em;
 }
 
 button {
     background-color: #8a5ba3;
     color: white;
-    padding: 12px 20px;
+    padding: 15px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.2em;
+    font-weight: bold;
     width: 100%;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre icono y texto */
 }
 
 button:hover {
     background-color: #6d477e;
+    transform: translateY(-2px); /* Pequeño efecto al pasar el ratón */
+}
+
+button i {
+    font-size: 1.2em; /* Tamaño del icono */
 }
 
 #orderSummary {
-    margin-top: 30px;
-    border-top: 1px dashed #ccc;
-    padding-top: 20px;
+    margin-top: 40px;
+    border-top: 2px dashed #e0e0e0;
+    padding-top: 25px;
     text-align: center;
 }
 
@@ -111,26 +151,64 @@ button:hover {
 
 #summaryText {
     background-color: #eee;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
     text-align: left;
-    white-space: pre-wrap; /* Mantiene saltos de línea y espacios */
-    word-wrap: break-word; /* Rompe palabras largas */
-    margin-bottom: 20px;
-    overflow-x: auto; /* Para scroll horizontal si el texto es muy largo */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    overflow-x: auto;
+    font-size: 1.05em;
+    line-height: 1.6;
+    border: 1px solid #ddd;
 }
 
-#orderSummary button {
-    width: auto;
-    display: inline-block;
-    margin: 5px;
+.summary-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+    justify-content: center;
+    gap: 15px; /* Espacio entre botones */
+}
+
+.summary-buttons button {
+    width: auto; /* Ancho automático para los botones de resumen */
+    padding: 12px 20px;
+    font-size: 1em;
+    margin-top: 0; /* Elimina el margen superior extra */
     background-color: #5a2d82;
 }
 
-#orderSummary button:hover {
+.summary-buttons button:hover {
     background-color: #431f64;
 }
 
 .hidden {
     display: none;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .aroma-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+    .aroma-item input[type="number"] {
+        width: calc(100% - 20px);
+    }
+    .contact-info input[type="text"],
+    .contact-info input[type="tel"] {
+        width: calc(100% - 20px);
+    }
+    .summary-buttons button {
+        width: 100%; /* Botones de resumen ocupan todo el ancho */
+    }
 }
