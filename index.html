@@ -4,26 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Aromas y Pedidos</title>
+    <!-- Enlaza tu archivo CSS para los estilos -->
     <link rel="stylesheet" href="style.css">
+    <!-- Enlaza Font Awesome para iconos si los necesitas (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Nuestro Catálogo de Aromas</h1>
-        <p>Selecciona la cantidad deseada de cada aroma y confirma tu pedido.</p>
+        <p class="subtitle">Selecciona la cantidad deseada de cada aroma y confirma tu pedido.</p>
 
         <form id="orderForm">
-            <div class="aroma-item">
-                <label for="rosa">Rosa Delicada:</label>
-                <input type="number" id="rosa" name="Rosa Delicada" min="0" value="0">
+            <div class="aroma-section">
+                <h2>Aromas Florales</h2>
+                <div class="aroma-grid">
+                    <div class="aroma-item">
+                        <label for="rosa">Rosa Delicada</label>
+                        <input type="number" id="rosa" name="Rosa Delicada" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="jazmin">Jazmín Nocturno</label>
+                        <input type="number" id="jazmin" name="Jazmín Nocturno" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="lavanda">Lavanda Fresca</label>
+                        <input type="number" id="lavanda" name="Lavanda Fresca" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="azahar">Flor de Azahar</label>
+                        <input type="number" id="azahar" name="Flor de Azahar" min="0" value="0">
+                    </div>
+                </div>
             </div>
-            <div class="aroma-item">
-                <label for="jazmin">Jazmín Nocturno:</label>
-                <input type="number" id="jazmin" name="Jazmín Nocturno" min="0" value="0">
+
+            <div class="aroma-section">
+                <h2>Aromas Frutales</h2>
+                <div class="aroma-grid">
+                    <div class="aroma-item">
+                        <label for="mango">Mango Tropical</label>
+                        <input type="number" id="mango" name="Mango Tropical" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="citricos">Cítricos Vibrantes</label>
+                        <input type="number" id="citricos" name="Cítricos Vibrantes" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="frutosRojos">Frutos Rojos</label>
+                        <input type="number" id="frutosRojos" name="Frutos Rojos" min="0" value="0">
+                    </div>
+                </div>
             </div>
-            <div class="aroma-item">
-                <label for="lavanda">Lavanda Fresca:</label>
-                <input type="number" id="lavanda" name="Lavanda Fresca" min="0" value="0">
+
+            <div class="aroma-section">
+                <h2>Aromas Amaderados</h2>
+                <div class="aroma-grid">
+                    <div class="aroma-item">
+                        <label for="sandalo">Sándalo Místico</label>
+                        <input type="number" id="sandalo" name="Sándalo Místico" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="pino">Pino Bosque</label>
+                        <input type="number" id="pino" name="Pino Bosque" min="0" value="0">
+                    </div>
+                </div>
             </div>
+
             <div class="contact-info">
                 <h2>Tus Datos de Contacto</h2>
                 <label for="nombre">Nombre:</label>
@@ -42,12 +87,15 @@
         <div id="orderSummary" class="hidden">
             <h2>Resumen de Tu Pedido</h2>
             <pre id="summaryText"></pre>
-            <button id="sendEmailBtn">Enviar por Correo</button>
-            <button id="sendWhatsappBtn">Enviar por WhatsApp</button>
-            <button id="copyTextBtn">Copiar Pedido</button>
+            <div class="summary-buttons">
+                <button id="sendEmailBtn"><i class="fas fa-envelope"></i> Enviar por Correo</button>
+                <button id="sendWhatsappBtn"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</button>
+                <button id="copyTextBtn"><i class="fas fa-copy"></i> Copiar Pedido</button>
+            </div>
         </div>
     </div>
 
+    <!-- Enlaza tu archivo JavaScript para la interactividad -->
     <script src="script.js"></script>
 </body>
 </html>
