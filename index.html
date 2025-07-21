@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Aromas y Pedidos</title>
+    <title>Catálogo de Productos y Aromas</title>
     <!-- Enlaza tu archivo CSS para los estilos -->
     <link rel="stylesheet" href="style.css">
     <!-- Enlaza Font Awesome para iconos si los necesitas (opcional) -->
@@ -11,60 +11,184 @@
 </head>
 <body>
     <div class="container">
-        <h1>Nuestro Catálogo de Aromas</h1>
-        <p class="subtitle">Selecciona la cantidad deseada de cada aroma y confirma tu pedido.</p>
+        <h1>Nuestro Catálogo de Productos y Aromas</h1>
+        <p class="subtitle">Selecciona los productos y la cantidad deseada de cada aroma.</p>
 
         <form id="orderForm">
+            <!-- Sección: Difusor Aromático -->
             <div class="aroma-section">
-                <h2>Aromas Florales</h2>
+                <h2>Difusor Aromático</h2>
                 <div class="aroma-grid">
                     <div class="aroma-item">
-                        <label for="rosa">Rosa Delicada</label>
-                        <input type="number" id="rosa" name="Rosa Delicada" min="0" value="0">
+                        <label for="difusor-rosa">Rosa Delicada</label>
+                        <input type="number" id="difusor-rosa" name="Difusor Aromático - Rosa Delicada" min="0" value="0">
                     </div>
                     <div class="aroma-item">
-                        <label for="jazmin">Jazmín Nocturno</label>
-                        <input type="number" id="jazmin" name="Jazmín Nocturno" min="0" value="0">
+                        <label for="difusor-jazmin">Jazmín Nocturno</label>
+                        <input type="number" id="difusor-jazmin" name="Difusor Aromático - Jazmín Nocturno" min="0" value="0">
                     </div>
                     <div class="aroma-item">
-                        <label for="lavanda">Lavanda Fresca</label>
-                        <input type="number" id="lavanda" name="Lavanda Fresca" min="0" value="0">
+                        <label for="difusor-lavanda">Lavanda Fresca</label>
+                        <input type="number" id="difusor-lavanda" name="Difusor Aromático - Lavanda Fresca" min="0" value="0">
                     </div>
                     <div class="aroma-item">
-                        <label for="azahar">Flor de Azahar</label>
-                        <input type="number" id="azahar" name="Flor de Azahar" min="0" value="0">
+                        <label for="difusor-azahar">Flor de Azahar</label>
+                        <input type="number" id="difusor-azahar" name="Difusor Aromático - Flor de Azahar" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-gardenia">Gardenia Exótica</label>
+                        <input type="number" id="difusor-gardenia" name="Difusor Aromático - Gardenia Exótica" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-lirio">Lirio del Valle</label>
+                        <input type="number" id="difusor-lirio" name="Difusor Aromático - Lirio del Valle" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-mango">Mango Tropical</label>
+                        <input type="number" id="difusor-mango" name="Difusor Aromático - Mango Tropical" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-citricos">Cítricos Vibrantes</label>
+                        <input type="number" id="difusor-citricos" name="Difusor Aromático - Cítricos Vibrantes" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-frutosRojos">Frutos Rojos</label>
+                        <input type="number" id="difusor-frutosRojos" name="Difusor Aromático - Frutos Rojos" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-durazno">Durazno Jugoso</label>
+                        <input type="number" id="difusor-durazno" name="Difusor Aromático - Durazno Jugoso" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-manzanaVerde">Manzana Verde</label>
+                        <input type="number" id="difusor-manzanaVerde" name="Difusor Aromático - Manzana Verde" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-sandalo">Sándalo Místico</label>
+                        <input type="number" id="difusor-sandalo" name="Difusor Aromático - Sándalo Místico" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-pino">Pino Bosque</label>
+                        <input type="number" id="difusor-pino" name="Difusor Aromático - Pino Bosque" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-cedro">Cedro Noble</label>
+                        <input type="number" id="difusor-cedro" name="Difusor Aromático - Cedro Noble" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-canela">Canela Cálida</label>
+                        <input type="number" id="difusor-canela" name="Difusor Aromático - Canela Cálida" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="difusor-vainilla">Vainilla Dulce</label>
+                        <input type="number" id="difusor-vainilla" name="Difusor Aromático - Vainilla Dulce" min="0" value="0">
                     </div>
                 </div>
             </div>
 
+            <!-- Sección: Esencia para hornillos -->
             <div class="aroma-section">
-                <h2>Aromas Frutales</h2>
+                <h2>Esencia para Hornillos</h2>
                 <div class="aroma-grid">
                     <div class="aroma-item">
-                        <label for="mango">Mango Tropical</label>
-                        <input type="number" id="mango" name="Mango Tropical" min="0" value="0">
+                        <label for="hornillos-rosa">Rosa Delicada</label>
+                        <input type="number" id="hornillos-rosa" name="Esencia Hornillos - Rosa Delicada" min="0" value="0">
                     </div>
                     <div class="aroma-item">
-                        <label for="citricos">Cítricos Vibrantes</label>
-                        <input type="number" id="citricos" name="Cítricos Vibrantes" min="0" value="0">
+                        <label for="hornillos-jazmin">Jazmín Nocturno</label>
+                        <input type="number" id="hornillos-jazmin" name="Esencia Hornillos - Jazmín Nocturno" min="0" value="0">
                     </div>
                     <div class="aroma-item">
-                        <label for="frutosRojos">Frutos Rojos</label>
-                        <input type="number" id="frutosRojos" name="Frutos Rojos" min="0" value="0">
+                        <label for="hornillos-lavanda">Lavanda Fresca</label>
+                        <input type="number" id="hornillos-lavanda" name="Esencia Hornillos - Lavanda Fresca" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="hornillos-mango">Mango Tropical</label>
+                        <input type="number" id="hornillos-mango" name="Esencia Hornillos - Mango Tropical" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="hornillos-sandalo">Sándalo Místico</label>
+                        <input type="number" id="hornillos-sandalo" name="Esencia Hornillos - Sándalo Místico" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="hornillos-vainilla">Vainilla Dulce</label>
+                        <input type="number" id="hornillos-vainilla" name="Esencia Hornillos - Vainilla Dulce" min="0" value="0">
                     </div>
                 </div>
             </div>
 
+            <!-- Sección: Esencia para humidificador -->
             <div class="aroma-section">
-                <h2>Aromas Amaderados</h2>
+                <h2>Esencia para Humidificador</h2>
                 <div class="aroma-grid">
                     <div class="aroma-item">
-                        <label for="sandalo">Sándalo Místico</label>
-                        <input type="number" id="sandalo" name="Sándalo Místico" min="0" value="0">
+                        <label for="humidificador-lavanda">Lavanda Fresca</label>
+                        <input type="number" id="humidificador-lavanda" name="Esencia Humidificador - Lavanda Fresca" min="0" value="0">
                     </div>
                     <div class="aroma-item">
-                        <label for="pino">Pino Bosque</label>
-                        <input type="number" id="pino" name="Pino Bosque" min="0" value="0">
+                        <label for="humidificador-eucalipto">Eucalipto Refrescante</label>
+                        <input type="number" id="humidificador-eucalipto" name="Esencia Humidificador - Eucalipto Refrescante" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="humidificador-menta">Menta Pura</label>
+                        <input type="number" id="humidificador-menta" name="Esencia Humidificador - Menta Pura" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección: Perfumes para ropa -->
+            <div class="aroma-section">
+                <h2>Perfumes para Ropa</h2>
+                <div class="aroma-grid">
+                    <div class="aroma-item">
+                        <label for="ropa-algodon">Algodón Suave</label>
+                        <input type="number" id="ropa-algodon" name="Perfume Ropa - Algodón Suave" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="ropa-floral">Brisa Floral</label>
+                        <input type="number" id="ropa-floral" name="Perfume Ropa - Brisa Floral" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="ropa-fresca">Frescura Cítrica</label>
+                        <input type="number" id="ropa-fresca" name="Perfume Ropa - Frescura Cítrica" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="ropa-bebe">Talco de Bebé</label>
+                        <input type="number" id="ropa-bebe" name="Perfume Ropa - Talco de Bebé" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección: Perfumes para autos spray -->
+            <div class="aroma-section">
+                <h2>Perfumes para Autos (Spray)</h2>
+                <div class="aroma-grid">
+                    <div class="aroma-item">
+                        <label for="auto-spray-pino">Pino Fresco</label>
+                        <input type="number" id="auto-spray-pino" name="Perfume Auto Spray - Pino Fresco" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="auto-spray-limon">Limón Energizante</label>
+                        <input type="number" id="auto-spray-limon" name="Perfume Auto Spray - Limón Energizante" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="auto-spray-marino">Océano Pacífico</label>
+                        <input type="number" id="auto-spray-marino" name="Perfume Auto Spray - Océano Pacífico" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección: Perfumes para autos colgantes -->
+            <div class="aroma-section">
+                <h2>Perfumes para Autos (Colgantes)</h2>
+                <div class="aroma-grid">
+                    <div class="aroma-item">
+                        <label for="auto-colgante-vainilla">Vainilla Clásica</label>
+                        <input type="number" id="auto-colgante-vainilla" name="Perfume Auto Colgante - Vainilla Clásica" min="0" value="0">
+                    </div>
+                    <div class="aroma-item">
+                        <label for="auto-colgante-frutos">Frutos Rojos</label>
+                        <input type="number" id="auto-colgante-frutos" name="Perfume Auto Colgante - Frutos Rojos" min="0" value="0">
                     </div>
                 </div>
             </div>
